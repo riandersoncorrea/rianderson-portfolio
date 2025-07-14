@@ -60,8 +60,8 @@ body {
 }
 
 .logo-rc > img {
-  width: 62px;
-  height: 62px;
+  width: 55px;
+  height: 55px;
 }
 
 .contato-btn {
@@ -523,8 +523,8 @@ i {
   }
 
   .sobre-secao-conteudo p {
-    font-size: 0.6rem;
-    line-height: 1.1rem;
+    font-size: 0.82rem;
+    line-height: 1.4rem;
     text-align: center;
   }
 
@@ -552,6 +552,9 @@ i {
     font-size: 2.2rem;
   }
 
+  #linha {
+    width: 510px;
+  }
   .contato-info {
     flex-direction: column;
     gap: 4rem;
