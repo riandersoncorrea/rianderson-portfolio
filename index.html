@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rianderson Correa</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/c9a6e3db44.js"
       crossorigin="anonymous"
@@ -34,13 +36,13 @@
     </header>
     <main>
       <section class="primeira-secao">
-        <h1>
-          diversão + <br />
-          interatividade + <br />
-          tecnologia
-        </h1>
+        <div>
+          <h1 data-aos="flip-down">diversão +</h1>
+          <h1 data-aos="flip-down" data-aos-delay="200">interatividade +</h1>
+          <h1 data-aos="flip-down" data-aos-delay="350">tecnologia</h1>
+        </div>
 
-        <div class="explore-btn">
+        <div data-aos="fade-up" data-aos-delay="400" class="explore-btn">
           <a href="https://xrbazaar.co/creators/riandersonc/" target="_blank"
             >Explore +</a
           >
@@ -48,20 +50,24 @@
       </section>
 
       <section class="sobre-secao">
-        <section class="sobre-secao-conteudo">
-          <h2>Conheça um pouco da minha trajetória.</h2>
-          <p>
-            Desenvolvo efeitos e jogos interativos no TikTok. <br />Gosto de
-            misturar diversão, tecnologia e um pouco de criatividade
-            <br />sempre buscando novas formas de entreter.
+        <section data-aos="zoom-in-down" class="sobre-secao-conteudo">
+          <h2 data-aos="zoom-in-down">Conheça um pouco da minha trajetória.</h2>
+          <p data-aos="zoom-in-down">
+            Desenvolvo efeitos e jogos interativos no TikTok. Gosto de misturar
+            diversão, tecnologia e um pouco de criatividade sempre buscando
+            novas formas de entreter.
           </p>
-          <div class="descubra-mais-btn">
+          <div data-aos="fade-up" class="descubra-mais-btn">
             <a href="">Descubra mais sobre mim</a>
           </div>
         </section>
 
-        <figure class="rianderson-foto">
-          <img src="Assets/fotos/rianderson1.png" alt="foto-Rianderson" />
+        <figure data-aos="zoom-in-down" class="rianderson-foto">
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/fotos/rianderson1.png"
+            alt="foto-Rianderson"
+          />
 
           <div id="elemento-superior"></div>
           <div id="elemento-esquerdo"></div>
@@ -69,14 +75,14 @@
       </section>
 
       <section id="projetos-secao" class="projetos-secao">
-        <h2>Projetos em Destaque</h2>
-        <div class="explore-mais-btn">
+        <h2 data-aos="fade-up">Projetos em Destaque</h2>
+        <div data-aos="fade-up" class="explore-mais-btn">
           <a href="https://xrbazaar.co/creators/riandersonc/" target="_blank"
             >Explore Mais</a
           >
         </div>
         <section class="galeria-projetos">
-          <figure class="video-preview">
+          <figure data-aos="zoom-in-down" class="video-preview">
             <video
               src="Assets/videos/francis.mp4"
               type="video/mp4"
@@ -104,7 +110,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="video-preview">
+          <figure data-aos="zoom-in-down" class="video-preview">
             <video
               src="Assets/videos/hboMax.mp4"
               type="video/mp4"
@@ -133,7 +139,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="video-preview">
+          <figure data-aos="zoom-in-down" class="video-preview">
             <video
               src="Assets/videos/mendorato.MP4"
               type="video/mp4"
@@ -162,7 +168,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="video-preview">
+          <figure data-aos="zoom-in-down" class="video-preview">
             <video
               src="Assets/videos/betano.mp4"
               type="video/mp4"
@@ -194,19 +200,43 @@
         </section>
       </section>
 
-      <section class="clientes-parceiros">
-        <h2>Clientes e Parceiros</h2>
+      <section data-aos="zoom-in-down" class="clientes-parceiros">
+        <h2 data-aos="zoom-in-down">Clientes e Parceiros</h2>
         <figure class="logos-clientes">
-          <img src="Assets/logos/hbo max.svg" alt="logo HBO" />
-          <img src="Assets/logos/francis.svg" alt="logo Francis" />
-          <img src="Assets/logos/betano.svg" alt="logo Betano" />
-          <img src="Assets/logos/estu.svg" alt="logo Estu" />
-          <img src="Assets/logos/Tnt Sports.svg" alt="logo tnt Sports" />
-          <img src="Assets/logos/Mendorato.svg" alt="logo Mendorato" />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/hbo max.svg"
+            alt="logo HBO"
+          />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/francis.svg"
+            alt="logo Francis"
+          />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/betano.svg"
+            alt="logo Betano"
+          />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/estu.svg"
+            alt="logo Estu"
+          />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/Tnt Sports.svg"
+            alt="logo tnt Sports"
+          />
+          <img
+            data-aos="zoom-in-down"
+            src="Assets/logos/Mendorato.svg"
+            alt="logo Mendorato"
+          />
         </figure>
       </section>
     </main>
-    <footer class="footer">
+    <footer data-aos="zoom-in-up" class="footer">
       <address class="cta">
         <p id="frase-cta">Curtiu? Bora criar juntos!</p>
         <p id="email">contato@rianderson.com.br</p>
@@ -246,5 +276,11 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
   </body>
 </html>

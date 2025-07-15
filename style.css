@@ -96,6 +96,12 @@ body {
   z-index: 0;
 }
 
+.primeira-secao div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+}
 .primeira-secao h1 {
   font-family: "Syne", sans-serif;
   text-align: center;
@@ -149,6 +155,7 @@ body {
 }
 
 .sobre-secao-conteudo p {
+  max-width: 80%;
   font-size: 1.125rem;
   line-height: 2rem;
   color: #a8a8a8;
@@ -212,7 +219,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 9.375rem;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   gap: 3.375rem;
 }
 
@@ -523,8 +530,8 @@ i {
   }
 
   .sobre-secao-conteudo p {
-    font-size: 0.82rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
   }
 
@@ -595,7 +602,8 @@ i {
   }
 
   .sobre-secao-conteudo p {
-    font-size: 0.7rem;
+    width: 75%;
+    font-size: 0.95rem;
   }
 
   .rianderson-foto img {
@@ -699,7 +707,7 @@ i {
 
 @media (max-width: 395px) {
   .primeira-secao h1 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     line-height: 2rem;
   }
 
@@ -719,7 +727,8 @@ i {
   }
 
   .sobre-secao-conteudo p {
-    font-size: 0.5rem;
+    width: 85%;
+    font-size: 0.7rem;
     line-height: 0.8rem;
   }
 
