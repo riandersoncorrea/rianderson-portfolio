@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  padding: 8.063rem 8.875rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* ajuste conforme o fundo */
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 9rem 0 12.75rem;
+}
+
+#menu-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#menu-conteudo > a {
+  color: #ffffff;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+#menu-conteudo > a:hover {
+  opacity: 100%;
+  transition-duration: 1s;
+}
+
+.logo-rc > img {
+  width: 55px;
+  height: 55px;
+}
+
+.titulo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 5.688rem;
+  z-index: 1;
+}
+.titulo > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.625rem;
+}
+.titulo h1 {
+  font-family: "Syne", sans-serif;
+  text-align: left;
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+  font-weight: bold;
+  background: none;
+}
+
+hr {
+  width: 100%;
+  border-color: #9eb0a9;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  z-index: 1;
+}
+
+.conteudo-principal-desc,
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.188rem;
+  z-index: 1;
+}
+
+.conteudo-principal h1 {
+  font-family: "Syne", sans-serif;
+  text-align: left;
+  font-weight: bold;
+  background: none;
+
+  font-size: 5rem;
+  letter-spacing: -0.156rem;
+  line-height: 5.25rem;
+}
+
+.conteudo-principal-desc {
+  padding-top: 5.625rem;
+  padding-bottom: 6.688rem;
+}
+
+.conteudo-principal-desc p {
+  font-size: 1.313rem;
+  font-weight: medium;
+  text-align: left;
+  letter-spacing: -0.041rem;
+  line-height: 2.438rem;
+  padding-top: 4rem;
+  width: 85%;
+}
+
+.galeria #foto1,
+#foto2 {
+  display: block;
+  border-radius: 1.87rem;
+}
+
+.galeria #foto1 {
+  max-width: 454px;
+  width: 100%;
+  max-height: 515px;
+  height: 100%;
+}
+
+.galeria #foto2 {
+  max-width: 750px;
+  width: 100%;
+  max-height: 515px;
+  height: 100%;
+}
+
+.selo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.selo > img {
+  max-width: 230px;
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .titulo h1 {
+    font-size: 3.8rem;
+  }
+  .conteudo-principal-desc {
+    flex-direction: column;
+  }
+  .conteudo-principal-desc p {
+    width: 100%;
+  }
+  .galeria #foto1 {
+    width: 34%;
+    height: 55%;
+  }
+
+  .galeria #foto2 {
+    width: 55%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main {
+    padding: 6.5rem 4rem;
+  }
+
+  .menu {
+    padding: 1.5rem 3rem 0 3rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  #menu-conteudo {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.7s ease;
+    z-index: 999;
+  }
+
+  #menu-conteudo.active {
+    right: 0;
+  }
+
+  .titulo {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 3.8rem 0;
+  }
+
+  .titulo h1 {
+    font-size: 3rem;
+  }
+
+  .galeria #foto1 {
+    display: none;
+  }
+
+  .galeria #foto2 {
+    width: 100%;
+  }
+
+  .selo {
+    row-gap: 3.5rem;
+    justify-content: flex-start;
+  }
+  .selo img {
+    width: 50%;
+  }
+
+  .cta {
+    margin-bottom: 5rem;
+  }
+  #email {
+    font-size: 2.2rem;
+  }
+
+  #linha {
+    width: 510px;
+  }
+  .contato-info {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 6.5rem 4rem;
+  }
+
+  .titulo {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 3.8rem 0;
+  }
+
+  .titulo p {
+    font-size: 0.8rem;
+  }
+  .titulo h1 {
+    font-size: 3rem;
+  }
+
+  .selo {
+    justify-content: flex-start;
+  }
+  .selo > img {
+    width: 50%;
+  }
+
+  .conteudo-principal {
+    padding-top: 1rem;
+  }
+  .conteudo-principal h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .conteudo-principal-desc p {
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+  .galeria #foto1 {
+    display: none;
+  }
+
+  .galeria #foto2 {
+    width: 100%;
+    border-radius: 0.87rem;
+  }
+  .contato-info {
+    gap: 3rem;
+  }
+
+  .info-adicionais {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .info-adicionais > div {
+    align-items: center;
+  }
+
+  .info-adicionais-texto {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  #cnpj {
+    font-size: 0.8rem;
+  }
+  #logo-footer {
+    width: 80%;
+  }
+
+  .cta {
+    gap: 0.3rem;
+  }
+
+  #frase-cta {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+  #email {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  #linha {
+    width: 300px;
+  }
+  .copy {
+    padding: 1rem 0;
+  }
+  .copy > p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .main {
+    padding: 3rem 2.2rem;
+  }
+
+  .titulo {
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+  }
+
+  .selo {
+    padding-top: 2rem;
+    justify-content: flex-start;
+  }
+
+  .titulo h1 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+
+  .conteudo-principal h1 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  .conteudo-principal-desc p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .galeria #foto2 {
+    border-radius: 0.87rem;
+  }
+  .footer {
+    gap: 0.2rem;
+  }
+
+  .info-adicionais-texto {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  #cnpj {
+    font-size: 0.4rem;
+  }
+  #logo-footer {
+    width: 60%;
+  }
+
+  .cta {
+    gap: 0.3rem;
+  }
+
+  #frase-cta {
+    font-size: 0.58rem;
+    line-height: 0.5rem;
+  }
+  #email {
+    font-size: 0.89rem;
+    line-height: 1.7rem;
+  }
+  .icones-social {
+    gap: 0.6rem;
+  }
+  .fa-brands {
+    font-size: 1.2rem;
+  }
+
+  #linha {
+    width: 220px;
+  }
+
+  .copy > p {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
