@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre</title>
-    <link rel="icon" type="image/png" href="/Assets/elementos/rcFav.png" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/sobre/estilos/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/Assets/elementos/rcFav.png"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/public/sobre/estilos/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script
@@ -18,7 +22,10 @@
     <header>
       <nav class="menu">
         <figure class="logo-rc">
-          <img src="/Assets/logos/logoCorNova.png" alt="logo Rianderson" />
+          <img
+            src="/public/Assets/logos/logoCorNova.png"
+            alt="logo Rianderson"
+          />
         </figure>
         <button class="menu-toggle" aria-label="Abrir menu">
           <span></span>
@@ -26,9 +33,9 @@
           <span></span>
         </button>
         <div id="menu-conteudo">
-          <a href="/index.html">Home</a>
-          <a href="/sobre/index.html" target="_self">Sobre mim</a>
-          <a href="/index.html#projetos-secao">Projetos</a>
+          <a href="/home">Home</a>
+          <a href="/sobre" target="_self">Sobre mim</a>
+          <a href="/home#projetos-secao">Projetos</a>
           <div>
             <a class="contato-btn" href="mailto:contato@rianderson.com.br"
               >Contato</a
@@ -46,7 +53,10 @@
         </div>
 
         <figure class="selo">
-          <img src="/Assets/logos/selo ambassador2.png" alt="selo embaixador" />
+          <img
+            src="/public/Assets/logos/selo ambassador2.png"
+            alt="selo embaixador"
+          />
         </figure>
       </section>
       <hr />
@@ -70,12 +80,12 @@
         <figure data-aos="fade-up" class="galeria">
           <img
             id="foto1"
-            src="/Assets/fotos/rianderson1.png"
+            src="/public/Assets/fotos/rianderson1.png"
             alt="foto Rianderson"
           />
           <img
             id="foto2"
-            src="/Assets/fotos/rianderson2.png"
+            src="/public/Assets/fotos/rianderson2.png"
             alt="fotoRianderson"
           />
         </figure>
@@ -89,7 +99,7 @@
       <figure class="contato-info">
         <img
           id="logo-footer"
-          src="Assets/logos/logoCorNova.png"
+          src="/public/Assets/logos/logoCorNova.png"
           alt="logo RC"
         />
         <address class="info-adicionais">
@@ -120,7 +130,7 @@
         <p>&#169; Rianderson Correa</p>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="/public/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
