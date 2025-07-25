@@ -793,8 +793,7 @@ i {
     align-content: center;
   }
 
-  .contato-info > a {
-    justify-items: center;
+  #logo-footer {
     align-items: center;
   }
 
