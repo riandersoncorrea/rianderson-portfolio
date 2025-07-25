@@ -792,11 +792,9 @@ i {
     align-items: center;
     align-content: center;
   }
-
-  #logo-footer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .contato-info {
+    flex-direction: column;
+    align-items: center;
   }
 
   .info-adicionais-texto {
@@ -809,6 +807,8 @@ i {
   }
   #logo-footer {
     width: 60%;
+    display: block;
+    margin: 0 auto;
   }
 
   .cta {
