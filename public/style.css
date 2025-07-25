@@ -793,7 +793,7 @@ i {
     align-content: center;
   }
 
-  .contato-info {
+  .contato-info > a {
     justify-items: center;
     align-items: center;
   }
