@@ -183,6 +183,7 @@ body {
   position: relative;
   display: inline-block;
   max-width: 729px;
+  filter: grayscale(100%);
 }
 
 .rianderson-foto img {
@@ -675,7 +676,7 @@ i {
     font-size: 0.8rem;
   }
   #logo-footer {
-    width: 80%;
+    width: 100%;
   }
 
   .cta {

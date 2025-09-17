@@ -142,12 +142,13 @@ hr {
   width: 100%;
   max-height: 515px;
   height: 100%;
+  filter: grayscale(100%);
 }
 
 .galeria #foto2 {
   max-width: 750px;
   width: 100%;
-  max-height: 515px;
+  max-height: 500px;
   height: 100%;
 }
 
